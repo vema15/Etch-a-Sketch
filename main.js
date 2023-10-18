@@ -2,7 +2,7 @@ let val = document.getElementById('dimension-input');
 
 
 let valInputBtn = document.getElementById('dimension-input-btn');
-valInputBtn.addEventListener('click', function () {
+valInputBtn.addEventListener('click', function () {    
     if(val.value <= 100) {
         gridLW = val.value;
     } else {
@@ -34,8 +34,13 @@ valInputBtn.addEventListener('click', function () {
     }   
 }
 
-});
+}, {once: true});
 
+
+let resetBtn = document.getElementById('reset-btn');
+resetBtn.addEventListener('click', function () {
+    location.reload();
+});
 
 
 
