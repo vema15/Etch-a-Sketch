@@ -9,6 +9,11 @@
     flex-direction: row;
 }
 
+.btn-suite {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 .grid-container {
