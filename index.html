@@ -7,27 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Lato:wght@100;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="header-container">
+        <h1>Etch-A-Sketch: RGB Edition</h1>
+        <div>Brought to you by Vema15</div>
+    </div>
     <div class="grid-select-container">
         <div>Please Enter a Dimensional Value:</div>
         <div class="input-suite">
-            <input type="text" placeholder="e.g. 6 for 6x6" id="dimension-input">
-        <div class="btn-suite">    
-            <button id="dimension-input-btn">Enter</button>
-            <button id="reset-btn">Reset Grid</button>
+            <input type="text" placeholder="Max Input: 100" id="dimension-input">
+            <div class="btn-suite">
+                <button id="dimension-input-btn">Enter</button>
+                <button id="reset-btn">Reset Grid</button>
+            </div>
         </div>
-        </div>
-        
     </div>
-    
+
     <div class="grid-container" id="grid-container">
 
     </div>
-    </div>
-
-    <div class="grid-type-button"></div>
+   
 
     <script src="main.js"></script>
 </body>
